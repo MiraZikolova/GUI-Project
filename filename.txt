@@ -1,0 +1,10 @@
+name: GitHub
+email: name@gmail.com
+username: NameIT
+password: flower67
+link: https://github.com/
+name: Pinterest
+email: name567@abv.bg
+username: Name98
+password: catsname
+link: https://www.pinterest.com/
