@@ -8,3 +8,8 @@ email: name567@abv.bg
 username: Name98
 password: catsname
 link: https://www.pinterest.com/
+name: Gmail
+email: name@gmail.com
+username: Name4567
+password: smth345267
+link: https://mail.google.com/mail/u/0/
