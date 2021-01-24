@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import java.awt.Color;
+import java.awt.Font;
 
 public class GUIVerification {
 
@@ -27,8 +29,9 @@ public class GUIVerification {
 		 * add text fields, buttons and other components.
 		 */
 		JPanel panel = new JPanel();
+		panel.setBackground(new Color(224, 255, 255));
 		// adding panel to frame
-		frame.add(panel);
+		frame.getContentPane().add(panel);
 		/*
 		 * calling user defined method for adding components to the panel.
 		 */
@@ -41,6 +44,7 @@ public class GUIVerification {
 
 		// Creating JLabel
 		JLabel userLabel = new JLabel("Username:");
+		userLabel.setFont(new Font("Century Gothic", Font.PLAIN, 15));
 		/*
 		 * This method specifies the location and size of component. setBounds(x, y,
 		 * width, height) here (x,y) are cordinates from the top left corner and
@@ -53,11 +57,13 @@ public class GUIVerification {
 		 * Creating text field where user is supposed to enter user name.
 		 */
 		JTextField userText = new JTextField(20);
+		userText.setFont(new Font("Century Gothic", Font.BOLD, 12));
 		userText.setBounds(100, 20, 165, 25);
 		panel.add(userText);
 
 		// Same process for password label and text field.
 		JLabel passwordLabel = new JLabel("Password:");
+		passwordLabel.setFont(new Font("Century Gothic", Font.PLAIN, 15));
 		passwordLabel.setBounds(10, 50, 80, 25);
 		panel.add(passwordLabel);
 
@@ -66,12 +72,15 @@ public class GUIVerification {
 		 * dots instead to protect the password like we normally see on login screens.
 		 */
 		JPasswordField passwordText = new JPasswordField(20);
+		passwordText.setFont(new Font("Century Gothic", Font.BOLD, 12));
 		passwordText.setBounds(100, 50, 165, 25);
 		panel.add(passwordText);
 
 		// Creating login button
 		JButton loginButton = new JButton("ENTER");
-		loginButton.setBounds(10, 80, 80, 25);
+		loginButton.setBackground(new Color(245, 245, 245));
+		loginButton.setFont(new Font("Century Gothic", Font.BOLD, 14));
+		loginButton.setBounds(100, 102, 80, 25);
 		panel.add(loginButton);
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -96,4 +105,3 @@ public class GUIVerification {
 	}
 
 }
-
